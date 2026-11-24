@@ -13,11 +13,19 @@ units = {
 
 def convert(value, from_unit, to_unit):
 	if from_unit not in units or to_unit not in units:
-		raise VallueError("対応していない単位")
+		raise ValueError("対応していない単位")
 
 	result = value * units[from_unit] / units[to_unit]
 	return result
 
 if len(sys.argv) != 4:
-	print("使い方：python3 unitconv.py 数値 変換前単位 変換後単位", file.sys=sys.stderr)
+	print("使い方：python3 unitconv.py 数値 変換前単位 変換後単位", file=sys.stderr)
 	sys.exit(1)
+
+value = float(sys.argv[1])
+from_unit = sys.argv[2]
+to_unit = sys.argv[3]
+
+result = convert(value, from_unit, to_unit)
+
+print(result)
