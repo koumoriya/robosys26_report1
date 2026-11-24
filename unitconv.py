@@ -31,4 +31,4 @@ try:
 
 except ValueError as e:
 	print(e, file=sys.stderr)
-	sys.exit
+	sys.exit(1)
