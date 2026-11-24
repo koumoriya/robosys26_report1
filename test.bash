@@ -15,6 +15,11 @@ status=$?
 test "$status" -ne 0 || ng "$LINENO"
 test -n "$err" || ng "$LINENO"
 
+err=$(./unitconv.py abc mm cm 2>&1)
+status=$?
+test "$status" -ne 0 || ng "$LINENO"
+test -n "$err" || ng "$LINENO"
+
 [ "${res}" = 0 ] && echo OK
 exit $res
 
