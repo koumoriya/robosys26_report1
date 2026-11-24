@@ -1,16 +1,16 @@
 # robosys26_report1
 
-##概要
+## 概要
 長さの単位を変換するコマンドunitconv.pyである。
 
-##使用方法
+## 使用方法
 ./unitconv.py <数値> <変換前単位> <変換後単位>
 
 ##対応単位
-・mm
-・cm
-・m
-・km
+- mm
+- cm
+- m
+- km
 
 ##実行例
 120mm をcm に変換する
@@ -23,7 +23,7 @@
 
 2.5m をmm に変換する
 
-./unitconv.py 2.5 mm cm
+./unitconv.py 2.5 mm mm
 
 実行結果：
 
