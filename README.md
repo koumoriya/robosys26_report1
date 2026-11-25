@@ -17,7 +17,7 @@
 - ft
 
 ## 実行例
-120mm をcm に変換する
+- 120mm をcm に変換する
 ```bash
 ./unitconv.py 120 mm cm
 ```
@@ -25,7 +25,7 @@
 実行結果：
 `12.0`
 
-2.5m をmm に変換する
+- 2.5m をmm に変換する
 ```bash
 ./unitconv.py 2.5 m mm
 ```
@@ -33,7 +33,7 @@
 実行結果：
 `2500.0`
 
-１inch をmm に変換する
+- １inch をmm に変換する
 ```bash
 ./unitconv.py 1 inch mm
 ```
