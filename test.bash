@@ -18,6 +18,21 @@ out=$(./unitconv.py 1 inch mm)
 out=$(./unitconv.py 1 ft cm)
 [ "${out}" = 30.48 ] || ng "$LINENO"
 
+out=$(./unitconv.py 1 g kg)
+[ "${out}" = 0.001 ] || ng "$LINENO"
+
+out=$(./unitconv.py 1 kg g)
+[ "${out}" = 1000.0 ] || ng "$LINENO"
+
+out=$(./unitconv.py 1 t kg)
+[ "${out}" = 1000.0 ] || ng "$LINENO"
+
+out=$(./unitconv.py 1000 mg g)
+[ "${out}" = 1.0 ] || ng "$LINENO"
+
+out=$(./unitconv.py 1 lb g)
+[ "${out}" = 453.59237 ] || ng "$LINENO"
+
 err=$(./unitconv.py 120 mm yd 2>&1)
 status=$?
 test "$status" -ne 0 || ng "$LINENO"
