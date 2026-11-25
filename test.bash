@@ -1,4 +1,6 @@
 #!/bin/bash
+# SPDX-FileCopyrightText: 2026 kou Moriyama
+# SPDX-License-Identifier: BSD-3-Clause
 
 ng () {
 	echo ${1}行目のテスト失敗
