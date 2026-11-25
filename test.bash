@@ -10,6 +10,12 @@ res=0
 out=$(./unitconv.py 120 mm cm)
 [ "${out}" = 12.0 ] || ng "$LINENO"
 
+out=$(./unitconv.py 1 inch mm)
+[ "${out}" = 25.4 ] || ng "$LINENO"
+
+out=$(./unitconv.py 1 ft cm)
+[ "${out}" = 30.48 ] || ng "$LINENO"
+
 err=$(./unitconv.py 120 mm yd 2>&1)
 status=$?
 test "$status" -ne 0 || ng "$LINENO"
