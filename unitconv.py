@@ -9,6 +9,8 @@ units = {
 	"cm":0.01,
 	"m":1.0,
 	"km":1000.0,
+	"inch":0.0254,
+	"ft":0.3048,
 }
 
 def convert(value, from_unit, to_unit):
