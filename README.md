@@ -1,6 +1,8 @@
 # robosys26_report1
 
 ## 概要
+![test](https://github.com/koumoriya/robosys26_report1/actions/workflows/test.yml/badge.svg)
+
 長さ, 質量の単位を変換するコマンドである。
 
 ## 使用方法
@@ -72,3 +74,13 @@
 ```
 GitHub Actionsを利用し、push時に複数のpythonバージョンで自動テストを行う。
 
+## 必要なソフトウェア
+- Python
+  - テスト済みバージョン: 3.10〜3.14
+
+## テスト環境
+- Ubuntu 24.04 LTS
+
+## ライセンス
+- このソフトウェアパッケージは、3条項BSDライセンスの下、再頒布および使用が許可されます。
+- © 2026 Kou Moriyama
